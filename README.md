@@ -1,4 +1,4 @@
-# simple_vpc
+# simple-vpc
 
 
 adding something new
