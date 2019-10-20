@@ -1,6 +1,6 @@
 [
     {
-        "ParameterKey" : "Region",
-        "ParameterValue" : "us-east-1"
+        "ParameterKey" : "AvailabilityZones",
+        "ParameterValue" : "$[taskcat_genaz_1]"
     }
 ]

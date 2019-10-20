@@ -1,6 +1,10 @@
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 Description: NET335 reInvent 2019
+Parameters:
+  AZ:
+    Type: AWS::EC2::AvailabilityZone::Name
+  
 Resources:
   myVPC:
     Type: AWS::EC2::VPC
@@ -13,6 +17,7 @@ Resources:
   mySUBNET:
     Type: AWS::EC2::Subnet
     Properties:
+      AvailabilityZone: !Ref AZ
       CidrBlock: 10.0.0.0/24
       VpcId: !Ref myVPC
 
