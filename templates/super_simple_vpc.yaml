@@ -2,7 +2,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: NET335 reInvent 2019
 Parameters:
-  AZ:
+  AvailabilityZones:
     Type: String
     Default: us-east-1a
     AllowedValues:
@@ -25,7 +25,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       AvailabilityZone:
-        Ref : AZ
+        Ref : AvailabilityZones
       CidrBlock: 10.0.0.0/24
       VpcId: !Ref myVPC
 
